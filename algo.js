@@ -27,3 +27,8 @@ function XO(str) {
 }
 
 console.log("Test || XO('XOXOOX'):", XO('XOXOOX'));
+console.log("Test || XO('xo'):", XO('xo'));
+console.log("Test || XO('xxOo'):", XO('xxOo'));
+// console.log("Test || XO('xo'):", XO('xo'));
+// console.log("Test || XO('xo'):", XO('xo'));
+// console.log("Test || XO('xo'):", XO('xo'));
