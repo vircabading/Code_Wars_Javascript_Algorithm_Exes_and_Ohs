@@ -9,8 +9,6 @@ function XO(str) {
     // Convert String to all Lower Case
     let lcStr = str.toLowerCase();
 
-    console.log("lower case string:", lcStr);
-
     // Iterate through the string to count numbers of X and O
     for (let idx=0; idx<str.length; idx++) {
         if (lcStr.charAt(idx) == 'x') {
@@ -21,7 +19,11 @@ function XO(str) {
         }
     }
 
-    console.log("num X: " + numX + " || num O: " + numO);
+    // Return true if the number of X and O are the same
+    if (numO === numX) {
+        return true;
+    }
+    return false;
 }
 
 console.log("Test || XO('XOXOOX'):", XO('XOXOOX'));
